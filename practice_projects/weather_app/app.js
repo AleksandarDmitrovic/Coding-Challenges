@@ -26,10 +26,16 @@ window.addEventListener('load', () => {
           temperatureDegree.textContent = temp;
           temperatureDescription.textContent = summary;
           locationTimezone.textContent = data.name
+          //Set Icon
+
         })
     });
 
   } else {
     h1.textContent = "Please enable location services"
+  }
+
+  function setIcons(icon, iconID) {
+    const skycons = new skycons({ color: "white" })
   }
 });
